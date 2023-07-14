@@ -3,4 +3,6 @@
 .RData
 .Ruserdata
 .log
+.idea
+.httr-oauth
 .DS_Store
