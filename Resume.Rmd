@@ -1,16 +1,16 @@
 ---
-name: Quy Phuc (Fillips)
-surname: Bui
-position: "Service Quality Analyst"
-address: "Hanoi, Vietnam"
+name: Bryan
+surname: Jenks
+position: "Information Technology Associate"
+address: "Covered California"
 profilepic: "./img/me.jpg"
-email: "fillipsbui@gmail.com"
-www:
-github: spillif
-linkedin: fillipsbui
-orcid: +84 853-533-668
+www: "bryanjenks.dev"
+email: "bryan@bryanjenks.dev"
+github: tallguyjenks
+linkedin: bryanjenks
+orcid: 0000-0002-9604-3069
 date: "`r format(Sys.time(), '%B %Y')`"
-headcolor: 198de4
+headcolor: 990000
 aboutme: "I have been writing production software in a variety of languages for over 5 years for various California State Government Agencies. I have a deep driven passion for software, automation, and data Engineering. This very CV was even compiled with code."
 docname: CV
 output: vitae::awesomecv
@@ -29,11 +29,15 @@ packages <- c('vitae'     # The CV's LaTeX Template
              ,'here'      # Relative File Paths
              ,'readr'     # Data Loading
              ,'glue'      # String Manipulation
+             ,'magick'    #Display Picture
+             ,'latexpdf'  # Convert to PDF
+             ,'rmarkdown'
+             ,'tinytex'
             )
 
 xfun::pkg_attach2(packages, message = FALSE)
 
-source(file = here("r","data.r"))
+source(file = here("r","data1.r"))
 
 ```
 
@@ -79,6 +83,21 @@ skills %>%
 
 ```
 
+# Honors
+
+```{r HONORS}
+
+honors %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
 # Projects
 
 ```{r PROJECTS}
@@ -113,9 +132,9 @@ works %>%
 
 # Certifications
 
-```{r ACHIEVEMENTS}
+```{r CERTIFICATIONS}
 
-achievements %>%
+certifications %>%
   detailed_entries(
     with = area,
     what = accomplishment,
