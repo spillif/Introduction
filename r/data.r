@@ -4,46 +4,31 @@ projects <- tribble(
     "Universal Data Scrubber", "California Correctional Health Care Services", 2018, "Region 1 Quality Management", "Creation of a Universal Data Scrubbing tool sent statewide to take most department SQL Report Server exports and turn them into raw data sets for Excel Analytics for end user staff"
 )
 
-certifications <- tribble(
+achievements <- tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Certified Lean Six Sigma Green Belt", NA, "", "", NA,
-    "Certified Lean Six Sigma White Belt", NA, "", "", NA,
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Excel - 112",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Word - 22",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Outlook - 21",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Power Point - 18",
-    "Microsoft Software", "Various Applications", "", "", "Share Point - 9",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Project - 6",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Access - 3",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Power BI - 3"
+    "Certified Google Data Analytics", NA, "", "", NA,
+    "Honorable Mention - Innovation Challenge", "Headcount Productivity Accuracy", "", "", "Evaluating the current calculattion and applying a new model to effectively manage the productivity",
+    "Certification", "", "", "Linkedin", "Finance for Non-financial Managers",
+    "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Word - 22",
+    "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Access",
+    "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Advance Excel",
+    "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Excel Macro - VBA"
 )
 
 skills <- tribble(
     ~area, ~skills,
-    "Programming Languages", "BASH, Batch, CCL, DAX, JavaScript, Python, R, T-SQL, PL-SQL, VBA",
-    "Markup Languages", "CSS, HTML, LaTeX, Markdown, RMarkdown, SASS, Groff/Troff",
-    "Data Interchange Formats", "CSV, JSON, XML, Feather",
-    "Other Languages", "YAML",
-    "Version Control", "Git",
-    "Text Editors", "Discern Visual Developer, RStudio, SQL Server Management Studio, VIM, Visual Studio, Visual Studio Code",
-    "Microsoft Office", "Excel, Outlook, OneNote, PowerBI, PowerPoint, Visio, Word"
+    "Programming Languages", "Python, SQL, R, VBA",
+    "Programming Platform ", "Visual Studio Code, RStudio, Goolge BigQuerry",
+    "Data Visualization", "Tableau, Power BI",
+    "Microsoft Suite", "Excel, Outlook, OneNote, PowerPoint, Visio, Word, Access"
 )
 
-honors <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Phi Theta Kappa Academic Honor Society", "Granted to individuals in the 90th percentile of their graduating class", 2015, "Cosumnes River College",NA,
-    "Galt Community Character Coalition Honesty Award", "Awarded by the Galt City Council", 2010, "City Of Galt",NA
-)
 
 edu <- tribble(
     ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,
-    "Western Governors University", 2020, NA, "Bachelors Data Analytics & Data Management", "Online",NA,
-    "American Council on Education - Statistics.com", 2019, 2019, "Statistics I & II", "Online",NA,
-    "Cosumnes River College", 2012, 2015, "Associate of Art (A.A.) Physical Education Teaching and Coaching", "Sacramento - California", "Phi Theta Kappa Academic Honor Society",
-    "Cosumnes River College", 2012, 2015, "Associate of Science (A.S.) Liberal Arts: Math and Science", "Sacramento - California", "Phi Theta Kappa Academic Honor Society",
-    "San Joaquin Delta College", 2011, 2011, "Pre-Calculus", "Stockton - California",NA,
-    "Galt High School", 2007, 2011, "Diploma", "Galt - California", "AP English Literature",
-    "Galt High School", 2007, 2011, "Diploma", "Galt - California", "AP US Government"
+    "Camosun College", 2016, 2018, "Diploma in Business Administration - General Management", "Victoria, BC, Canada",NA,
+    "Camosun College", 2017, 2017, "Certificate in Business Administration", "Victoria, BC, Canada",NA,
+    "Nguyen Trai High School", 2013, 2015, "High School Diploma", "Hanoi, Vietnam", NA
 )
 
 work <- tribble(

@@ -79,21 +79,6 @@ skills %>%
 
 ```
 
-# Honors
-
-```{r HONORS}
-
-honors %>%
-  detailed_entries(
-    with = area,
-    what = accomplishment,
-    why = detail,
-    when = year,
-    where = where
-  )
-
-```
-
 # Projects
 
 ```{r PROJECTS}
@@ -128,9 +113,9 @@ works %>%
 
 # Certifications
 
-```{r CERTIFICATIONS}
+```{r ACHIEVEMENTS}
 
-certifications %>%
+achievements %>%
   detailed_entries(
     with = area,
     what = accomplishment,
