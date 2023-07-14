@@ -1,65 +1,142 @@
 ---
-name: Quy Phuc (Fillips)
-surname: Bui
-position: "Service Quality Analyst"
-pronouns: she/her
-address: "Hanoi, Vietnam"
+name: Bryan
+surname: Jenks
+position: "Information Technology Associate"
+address: "Covered California"
 profilepic: "./img/me.jpg"
-phone: +84 853-533-668
-email: "fillipsbui@gmail.com"
-github: spillif
-linkedin: fillipsbui
+www: "bryanjenks.dev"
+email: "bryan@bryanjenks.dev"
+github: tallguyjenks
+linkedin: bryanjenks
+orcid: 0000-0002-9604-3069
 date: "`r format(Sys.time(), '%B %Y')`"
-output:
-  vitae::awesomecv:
-    page_total: true
+headcolor: 990000
+aboutme: "I have been writing production software in a variety of languages for over 5 years for various California State Government Agencies. I have a deep driven passion for software, automation, and data Engineering. This very CV was even compiled with code."
+docname: CV
+output: vitae::awesomecv
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-library(vitae)
+knitr::opts_chunk$set(echo = FALSE,
+                      warning = FALSE,
+                      message = FALSE)
+
+require(xfun)
+
+packages <- c('vitae'     # The CV's LaTeX Template
+             ,'tibble'    # Data structure for tribbles
+             ,'magrittr'  # The Pipe %>%
+             ,'here'      # Relative File Paths
+             ,'readr'     # Data Loading
+             ,'glue'      # String Manipulation
+            )
+
+xfun::pkg_attach2(packages, message = FALSE)
+
+source(file = here("r","data.r"))
+
 ```
 
-# Some stuff about me
+# Employment
 
--   I poisoned myself doing research.
--   I was the first woman to win a Nobel prize
--   I was the first person and only woman to win a Nobel prize in two different sciences.
+```{r EMPLOYMENT}
+
+work %>%
+  detailed_entries(
+    with = title,
+    what = unit,
+    why = detail,
+    when = glue::glue("{startMonth} {startYear} --> {endMonth} {endYear}",.na = ""),
+    where = where
+  )
+
+```
 
 # Education
 
-```{r}
-library(tibble)
-tribble(
-  ~ Degree, ~ Year, ~ Institution, ~ Where,
-  "Informal studies", "1889-91", "Flying University", "Warsaw, Poland",
-  "Master of Physics", "1893", "Sorbonne Université", "Paris, France",
-  "Master of Mathematics", "1894", "Sorbonne Université", "Paris, France"
-) %>%
-  detailed_entries(Degree, Year, Institution, Where)
-```
+```{r EDUCATION}
 
-# Nobel Prizes
-
-```{r}
-tribble(
-  ~Year, ~Type, ~Desc,
-  1903, "Physics", "Awarded for her work on radioactivity with Pierre Curie and Henri Becquerel",
-  1911, "Chemistry", "Awarded for the discovery of radium and polonium"
-) %>%
-  brief_entries(
-    glue::glue("Nobel Prize in {Type}"),
-    Year,
-    Desc
+edu %>%
+  detailed_entries(
+    with = inst,
+    what = degree,
+    why = detail,
+    when = glue::glue("{startYear} --> {endYear}",.na = ""),
+    where = where
   )
+
 ```
 
-# Publications
+# Skills
 
-```{r}
-library(dplyr)
-knitr::write_bib(c("vitae", "tibble"), "packages.bib")
+```{r SKILLS}
 
-bibliography_entries("packages.bib") %>%
-  arrange(desc(author$family), issued)
+skills %>%
+  detailed_entries(
+    with = area,
+    what = skills
+  )
+
+```
+
+# Honors
+
+```{r HONORS}
+
+honors %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+# Projects
+
+```{r PROJECTS}
+
+projects %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+# Works
+
+```{r WORKS}
+
+works %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
+```
+
+\pagebreak
+
+# Certifications
+
+```{r CERTIFICATIONS}
+
+certifications %>%
+  detailed_entries(
+    with = area,
+    what = accomplishment,
+    why = detail,
+    when = year,
+    where = where
+  )
+
 ```
