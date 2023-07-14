@@ -1,16 +1,4 @@
 ---
-<<<<<<< HEAD
-name: Quy Phuc (Fillips)
-surname: Bui
-position: "Service Quality Analyst"
-pronouns: she/her
-address: "Hanoi, Vietnam"
-profilepic: "./Introduction/img/me.jpg"
-phone: +84 853-533-668
-email: "fillipsbui@gmail.com"
-github: spillif
-linkedin: fillipsbui
-=======
 name: Bryan
 surname: Jenks
 position: "Information Technology Associate"
@@ -21,7 +9,6 @@ email: "bryan@bryanjenks.dev"
 github: tallguyjenks
 linkedin: bryanjenks
 orcid: 0000-0002-9604-3069
->>>>>>> 0e8f980ef9ce78355cb3bdbdc55168d2a4a22e66
 date: "`r format(Sys.time(), '%B %Y')`"
 headcolor: 990000
 aboutme: "I have been writing production software in a variety of languages for over 5 years for various California State Government Agencies. I have a deep driven passion for software, automation, and data Engineering. This very CV was even compiled with code."
@@ -30,22 +17,6 @@ output: vitae::awesomecv
 ---
 
 ```{r setup, include=FALSE}
-<<<<<<< HEAD
-knitr::opts_chunk$set(echo = FALSE, warning = FALSE, message = FALSE)
-
-require(xfun)
-
-packages <- c('vitae'
-              ,'tibble'
-              ,'magrittr'
-              ,'here'
-              ,'readr'
-              ,'glue'
-              ,'magick'
-)
-
-xfun::pkg_attach2(packages, message=FALSE)
-=======
 knitr::opts_chunk$set(echo = FALSE,
                       warning = FALSE,
                       message = FALSE)
@@ -64,7 +35,6 @@ xfun::pkg_attach2(packages, message = FALSE)
 
 source(file = here("r","data.r"))
 
->>>>>>> 0e8f980ef9ce78355cb3bdbdc55168d2a4a22e66
 ```
 
 # Employment
