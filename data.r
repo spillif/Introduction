@@ -6,9 +6,9 @@ projects <- tribble(
 
 achievements <- tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Certified Google Data Analytics", NA, "", "", NA,
+    "Google Data Analytics", NA, "", "Coursera", NA,
     "Honorable Mention - Innovation Challenge", "Headcount Productivity Accuracy", "", "", "Evaluating the current calculattion and applying a new model to effectively manage the productivity",
-    "Certification", NA, "", "Linkedin", "Finance for Non-financial Managers",
+    "Finance for Non-financial Managers", NA, "", "Linkedin", NA,
     "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Word - 22",
     "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Access",
     "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Advance Excel",
@@ -22,7 +22,6 @@ skills <- tribble(
     "Data Visualization", "Tableau, Power BI",
     "Microsoft Suite", "Excel, Outlook, OneNote, PowerPoint, Visio, Word, Access"
 )
-
 
 edu <- tribble(
     ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,

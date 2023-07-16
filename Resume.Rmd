@@ -38,7 +38,7 @@ packages <- c('vitae'     # The CV's LaTeX Template
 
 xfun::pkg_attach2(packages, message = FALSE)
 
-source(file = here("data.r"))
+source(file = here("r","data.r"))
 
 ```
 
@@ -135,7 +135,7 @@ works %>%
 
 ```{r CERTIFICATIONS}
 
-achievements %>%
+certifications %>%
   detailed_entries(
     with = area,
     what = accomplishment,
