@@ -1,15 +1,12 @@
-certifications <- tribble(
-    ~area, ~accomplishment, ~year, ~where, ~detail,
-    "Certified Lean Six Sigma Green Belt", NA, "", "", NA,
-    "Certified Lean Six Sigma White Belt", NA, "", "", NA,
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Excel - 112",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Word - 22",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Outlook - 21",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Power Point - 18",
-    "Microsoft Software", "Various Applications", "", "", "Share Point - 9",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Project - 6",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Access - 3",
-    "Microsoft Software", "Various Applications", "", "", "Microsoft Power BI - 3"
+edu <- tribble(
+    ~degree, ~startYear, ~endYear, ~inst, ~where, ~detail,
+    "Western Governors University", 2020, NA, "Bachelors Data Analytics & Data Management", "Online",NA,
+    "American Council on Education - Statistics.com", 2019, 2019, "Statistics I & II", "Online",NA,
+    "Cosumnes River College", 2012, 2015, "Associate of Art (A.A.) Physical Education Teaching and Coaching", "Sacramento - California", "Phi Theta Kappa Academic Honor Society",
+    "Cosumnes River College", 2012, 2015, "Associate of Science (A.S.) Liberal Arts: Math and Science", "Sacramento - California", "Phi Theta Kappa Academic Honor Society",
+    "San Joaquin Delta College", 2011, 2011, "Pre-Calculus", "Stockton - California",NA,
+    "Galt High School", 2007, 2011, "Diploma", "Galt - California", "AP English Literature",
+    "Galt High School", 2007, 2011, "Diploma", "Galt - California", "AP US Government"
 )
 
 skills <- tribble(
