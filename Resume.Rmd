@@ -33,11 +33,12 @@ packages <- c('vitae'     # The CV's LaTeX Template
              ,'latexpdf'  # Convert to PDF
              ,'rmarkdown'
              ,'tinytex'
+             ,'tidyverse'
             )
 
 xfun::pkg_attach2(packages, message = FALSE)
 
-source(file = here("r","data1.r"))
+source(file = here("data.r"))
 
 ```
 
@@ -134,7 +135,7 @@ works %>%
 
 ```{r CERTIFICATIONS}
 
-certifications %>%
+achievements %>%
   detailed_entries(
     with = area,
     what = accomplishment,

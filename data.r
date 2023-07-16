@@ -8,7 +8,7 @@ achievements <- tribble(
     ~area, ~accomplishment, ~year, ~where, ~detail,
     "Certified Google Data Analytics", NA, "", "", NA,
     "Honorable Mention - Innovation Challenge", "Headcount Productivity Accuracy", "", "", "Evaluating the current calculattion and applying a new model to effectively manage the productivity",
-    "Certification", "", "", "Linkedin", "Finance for Non-financial Managers",
+    "Certification", NA, "", "Linkedin", "Finance for Non-financial Managers",
     "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Word - 22",
     "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Access",
     "Microsoft Software", "Various Applications", "", "Linkedin", "Microsoft Advance Excel",
