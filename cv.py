@@ -5,15 +5,15 @@ from PIL import Image
 
 
 # --- PATH SETTINGS ---
-css_file = "https://github.com/spillif/Introduction/blob/main/style/main.css"
-resume_file = "https://github.com/spillif/Introduction/blob/main/assets/CV.pdf"
-profile_pic = "https://github.com/spillif/Introduction/blob/main/assets/me.jpg"
-
+current_dir = Path(__file__).parent if "__file__" in locals() else Path.cwd()
+css_file = current_dir / "styles" / "main.css"
+resume_file = current_dir / "assets" / "CV.pdf"
+profile_pic = current_dir / "assets" / "me.jpg"
 
 # --- GENERAL SETTINGS ---
-PAGE_TITLE = "Digital CV | John Doe"
+PAGE_TITLE = "Digital CV | Quy Phuc (Fillips) Bui"
 PAGE_ICON = ":wave:"
-NAME = "John Doe"
+NAME = "Quy Phuc (Fillips) Bui"
 DESCRIPTION = """
 Senior Data Analyst, assisting enterprises by supporting data-driven decision-making.
 """
